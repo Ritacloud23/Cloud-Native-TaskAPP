@@ -1,0 +1,27 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# Secrets
+*.pem
+*.key
+*.crt
+terraform.tfvars
+*.auto.tfvars
+secrets.yaml
+
+# Kubernetes
+kubeconfig*
+*.kubeconfig
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
