@@ -49,7 +49,8 @@ jobs:
       - name: Build and push frontend image
         uses: docker/build-push-action@v6
         with:
-          context: ./app/capstone-project-novara/taskapp_frontend
+          context: ./taskapp_frontend
+          file: ./taskapp_frontend/Dockerfile
           push: true
           tags: ${{ steps.meta_frontend.outputs.tags }}
           labels: ${{ steps.meta_frontend.outputs.labels }}
@@ -57,7 +58,8 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v6
         with:
-          context: ./app/capstone-project-novara/taskapp_backend
+          context: ./taskapp_backend
+          file: ./taskapp_backend/Dockerfile
           push: true
           tags: ${{ steps.meta_backend.outputs.tags }}
           labels: ${{ steps.meta_backend.outputs.labels }}
