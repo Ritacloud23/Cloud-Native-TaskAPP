@@ -39,3 +39,33 @@ variable "availability_zones" {
   type        = list(string)
   default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
+
+variable "db_instance_class" {
+  description = "RDS instance class"
+  type        = string
+  default     = "db.t3.micro"
+}
+
+variable "db_allocated_storage" {
+  description = "RDS allocated storage in GB"
+  type        = number
+  default     = 20
+}
+
+variable "db_name" {
+  description = "Database name"
+  type        = string
+  default     = "taskapp"
+}
+
+variable "db_username" {
+  description = "Database master username"
+  type        = string
+  default     = "taskapp_user"
+}
+
+variable "db_password" {
+  description = "Database master password"
+  type        = string
+  sensitive   = true
+}

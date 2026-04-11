@@ -9,3 +9,12 @@ output "public_subnet_ids" {
 output "private_subnet_ids" {
   value = aws_subnet.private[*].id
 }
+
+output "rds_endpoint" {
+  value     = aws_db_instance.postgres.endpoint
+  sensitive = true
+}
+
+output "rds_port" {
+  value = aws_db_instance.postgres.port
+}
