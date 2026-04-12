@@ -100,12 +100,11 @@ This capstone project deploys a full-stack cloud-native task management platform
 
 ---
 
-##  Architecture
+## Architecture
 
 ### High-Level Architecture Diagram
 
-```
-                         <p align="center">
+<p align="center">
   <img src="docs/architecture.png" alt="High-Level Architecture Diagram" width="1000"/>
 </p>
           
