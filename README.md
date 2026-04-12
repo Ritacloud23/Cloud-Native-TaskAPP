@@ -2,9 +2,9 @@
 
 <div align="center">
 
-**Author:** Ugwanyi Rita Nnenna  
+**Author:** Ugwuanyi Rita Nnenna  
 **GitHub:** [@Ritacloud23](https://github.com/Ritacloud23)  
- Targeting Cloud/DevOps roles in Canada | Open to Work
+ Cloud and DevOps Engineer focused on scalable infrastructure, automation, and continuous improvement | Open to Work
 
 [![Live App](https://img.shields.io/badge/Live_App-devopsbliss.online-success?style=for-the-badge&logo=google-chrome&logoColor=white)](https://devopsbliss.online)
 [![ArgoCD](https://img.shields.io/badge/GitOps-ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)](https://devopsbliss.online)
@@ -21,6 +21,10 @@
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![HCL](https://img.shields.io/badge/HCL-844FBA?style=for-the-badge)
+![Shell](https://img.shields.io/badge/Shell-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -101,42 +105,11 @@ This capstone project deploys a full-stack cloud-native task management platform
 ### High-Level Architecture Diagram
 
 ```
-                          Internet
-                              │
-                              ▼
-                    ┌─────────────────┐
-                    │   Route 53      │
-                    │ devopsbliss.online│
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │ Network Load    │
-                    │   Balancer      │
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │ nginx Ingress   │
-                    │  Controller     │
-                    └────────┬────────┘
-                             │
-              ┌──────────────┴──────────────┐
-              │                             │
-              ▼                             ▼
-     / ──► frontend-service          /api ──► backend-service
-              │                             │
-     ┌────────┴────────┐         ┌──────────┴──────────┐
-     │ Frontend Pods   │         │   Backend Pods      │
-     │ (2 replicas)    │         │   (2 replicas)      │
-     │ React + nginx   │         │   Flask + SQLAlchemy│
-     └─────────────────┘         └──────────┬──────────┘
-                                            │
-                                 ┌──────────▼──────────┐
-                                 │    AWS RDS          │
-                                 │  PostgreSQL 15      │
-                                 │  (Private Subnet)   │
-                                 └─────────────────────┘
+                         <p align="center">
+  <img src="docs/architecture.png" alt="High-Level Architecture Diagram" width="1000"/>
+</p>
+          
+    
 ```
 
 ### Network Architecture
@@ -795,8 +768,8 @@ Cloud & DevOps Engineer
 [![LinkedIn](hlinkedin.com/in/rita-nnennalinkedin.com/in/rita-nnenna)
 [![GitHub](https://github.com/Ritacloud23)
 
-📍 Based in Nigeria | Targeting Cloud/DevOps roles in **Remote**  
-🔍 **Open to Work** — Cloud Engineer (AWS) (Azure) (GCP)| DevOps Engineer
+📍 Based in Nigeria | Based in Nigeria | Open to Remote Roles Worldwide  
+🔍 **Open to Work**  Cloud Engineer (AWS, Azure, GCP) | DevOps Engineer
 
 **Skills:** AWS • Terraform • Ansible • Docker • Kubernetes • GitHub Actions • CI/CD • Linux • Bash • Python • Git • CloudWatch • Prometheus • Grafana • VPC • DNS • Load Balancers
 
