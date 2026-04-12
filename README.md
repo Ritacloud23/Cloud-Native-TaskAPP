@@ -107,13 +107,10 @@ This capstone project deploys a full-stack cloud-native task management platform
 <p align="center">
   <img src="docs/architecture.png" alt="High-Level Architecture Diagram" width="1000"/>
 </p>
-          
-    
-```
 
 ### Network Architecture
 
-```
+```text
 VPC: 172.20.0.0/16 (k8s.devopsbliss.online)
 │
 ├── Public Subnets (Load Balancers, NAT Gateways)
@@ -122,9 +119,9 @@ VPC: 172.20.0.0/16 (k8s.devopsbliss.online)
 │   └── us-east-1c: 172.20.16.0/21  (utility subnet)
 │
 └── Private Subnets (Masters, Workers, RDS)
-    ├── us-east-1a: 172.20.64.0/18   (node subnet)
-    ├── us-east-1b: 172.20.128.0/18  (node subnet)
-    └── us-east-1c: 172.20.192.0/18  (node subnet)
+    ├── us-east-1a: 172.20.64.0/18
+    ├── us-east-1b: 172.20.128.0/18
+    └── us-east-1c: 172.20.192.0/18
 ```
 
 **CIDR Allocation Rationale:**
