@@ -763,8 +763,7 @@ Cloud & DevOps Engineer
 
 [![LinkedIn](hlinkedin.com/in/rita-nnennalinkedin.com/in/rita-nnenna)
 [![GitHub](https://github.com/Ritacloud23)
-
-📍 Based in Nigeria | Based in Nigeria | Open to Remote Roles Worldwide  
+  
 🔍 **Open to Work**  Cloud Engineer (AWS, Azure, GCP) | DevOps Engineer
 
 **Skills:** AWS • Terraform • Ansible • Docker • Kubernetes • GitHub Actions • CI/CD • Linux • Bash • Python • Git • CloudWatch • Prometheus • Grafana • VPC • DNS • Load Balancers
