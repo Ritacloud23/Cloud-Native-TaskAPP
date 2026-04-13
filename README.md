@@ -346,7 +346,7 @@ with app.app_context():
 
 ---
 
-## 🔒 SSL & Ingress
+##  SSL & Ingress
 
 ### cert-manager ClusterIssuer
 
@@ -643,7 +643,7 @@ Open **https://devopsbliss.online** ✅
 
 ---
 
-## ✅ Validation Evidence
+##  Validation Evidence
 
 ### Cluster Health
 
@@ -657,7 +657,7 @@ i-0af25d5d66a3670a9   Ready    node           v1.35.3   172.20.104.211
 i-02219e969a87ae023   Ready    node,spot      v1.35.3   172.20.244.83
 ```
 
-✅ 3 control-plane nodes across 3 AZs | ✅ All nodes use private IPs only
+ 3 control-plane nodes across 3 AZs |  All nodes use private IPs only
 
 ### All Pods Running
 
@@ -712,22 +712,22 @@ No changes. Your infrastructure matches the configuration.
 
 ##  Lessons Learned
 
-**1. CrashLoopBackOff — always check `--previous` logs**
+**1. CrashLoopBackOff - always check `--previous` logs**
 `kubectl logs <pod> --previous` reveals the crash from the last container. nginx was crashing because the config referenced `/etc/letsencrypt/` SSL certs that don't exist inside Docker. Fix: SSL termination at the Ingress level, not the pod.
 
-**2. SSL termination belongs at the Ingress — not the pod**
+**2. SSL termination belongs at the Ingress - not the pod**
 In Kubernetes, application nginx listens on port 80. SSL is handled by the Ingress controller + cert-manager. Putting SSL inside the pod creates cert management nightmares.
 
 **3. Two ingresses on the same domain conflict silently**
-ALB ingress and nginx ingress claiming the same host causes silent routing failures. One ingress controller — one source of truth.
+ALB ingress and nginx ingress claiming the same host causes silent routing failures. One ingress controller - one source of truth.
 
-**4. ACM cert validation — verify the CNAME was actually created**
+**4. ACM cert validation - verify the CNAME was actually created**
 The "Create records in Route 53" button doesn't always work. Always verify the `_` CNAME record exists in your hosted zone before waiting.
 
 **5. cert-manager only acts when the annotation is on the Ingress**
 If `cert-manager.io/cluster-issuer` is missing from the applied manifest, cert-manager does nothing — no error, just silence.
 
-**6. Vite env vars are baked at build time — not runtime**
+**6. Vite env vars are baked at build time - not runtime**
 `VITE_API_URL` is compiled into the JS bundle. It must be passed as Docker `ARG` and `ENV`. Changing `.env.production` without rebuilding does nothing.
 
 **7. Docker cache lies when env files change**
@@ -738,7 +738,7 @@ RDS provisioned by Terraform must be in the same VPC as the kops cluster. Use `d
 
 ---
 
-## 🧹 Cleanup
+##  Cleanup
 
 ```bash
 # Delete Kubernetes resources
